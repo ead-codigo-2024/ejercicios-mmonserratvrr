@@ -1,0 +1,55 @@
+:root {
+    --color-primary: #6C6061;
+    --border-radius: 10px;
+}
+
+body {
+    background-color: #B2BCAA;
+}
+
+.container {
+	display: flex;
+	min-height: 100vh;
+}
+
+.intro {
+    max-width: 1000px;
+	margin: auto;
+    padding: 2.5rem;
+    background-color: #838E83;
+    border-radius: var(--border-radius);
+    border: 10px solid white;
+}
+
+.intro__title {
+    margin-bottom: 1.5rem;
+    font-size: 4rem;
+    color: white;
+    letter-spacing: 3px;
+    font-family: Bungee;
+}
+
+.intro__description {
+  font-family: Poppins;
+	color: white;
+    margin-bottom: 1.5rem;
+    line-height: 1.4;
+  font-size: 1.5rem;
+}
+
+.intro__action {
+    display: inline-block;
+    padding: 15px 20px 12px 20px;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: var(--color-primary);
+    border-radius: var(--border-radius);
+   letter-spacing: 3px;
+  font-family: Poppins;
+}
+
+.intro__action:hover {
+    text-decoration: underline;
+}

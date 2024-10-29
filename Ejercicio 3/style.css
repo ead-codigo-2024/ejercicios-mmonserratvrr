@@ -1,43 +1,93 @@
 body {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 20px;
+    color: #333;
 }
-.container {
-    max-width: 900px;
-    margin-inline: auto;
-    background-color: #B5A886;
+
+.noticias {
+    max-width: 1200px;
+    margin: auto;
 }
-.container_header {
+
+.noticias h2 {
+    font-size: 24px;
+    color: #373e50;
+}
+
+.subrayado {
+    color: #ffc107;
+}
+
+.tarjetas {
     display: flex;
-    align-items: center;
-    background-color: #74776B;
-}
-.container_header h3 {
-    margin-inline-end: auto;
-}
-.container_body {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
+    margin-top: 20px;
 }
-img, video {
-    max-width: 100%;
-}
-@media (max-width: 800px) {
-    .container_body {
-        grid-template-columns: unset;
-    }
-}
-.access {
+
+.tarjeta {
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 30%;
     position: relative;
 }
-.access__content {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    right: 20px;
-    padding: 20px;
-    background-color: white;
+
+.tarjeta img {
+    width: 100%;
+    height: auto;
 }
-h3 {
-    color: #FFFFFF;
+
+.categoria {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #007bff;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+.categoria.iglesia {
+    background-color: #007bff; /* azul */
+}
+
+.categoria.tecnologia {
+    background-color: #17a2b8; /* cyan */
+}
+
+.categoria.eleccion {
+    background-color: #ffc107; /* amarillo */
+}
+
+.contenido {
+    padding: 15px;
+}
+
+.titulo {
+    font-size: 12px;
+    color: #666;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.contenido h3 {
+    font-size: 16px;
+    margin: 0;
+}
+
+.ver-todas {
+    display: inline-block;
+    margin-top: 20px;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.mas {
+    font-size: 20px;
 }
